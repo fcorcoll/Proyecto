@@ -1,8 +1,5 @@
 
-// Este programa simula un loggin, dentro del bucle te dice
-// los intentos disponibles y solo te muestra el ok si no se trata del
-// usuario reservado o de un espacio nulo.
-//porfavor actualiza
+// Primer test de la entrega de proyecto
 
 const reservado = "stop"
 

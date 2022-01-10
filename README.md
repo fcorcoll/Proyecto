@@ -1,5 +1,5 @@
-# Clase2FrancescCorcoll
+# PrimeraEntregaProyecto
 
 
 
-Francesc Corcoll Ricart, clase 3  Ciclos.
+Francesc Corcoll Ricart, primera entrega del proyecto Final
