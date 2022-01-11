@@ -18,7 +18,8 @@
 header{
     background: black;
     width: 100%;
-    height: 100px;
+    min-height: 100px;
+    
 }
 .ancho{
     width: 70%;
@@ -27,17 +28,17 @@ header{
     background: black;
 }
 .logo{
-    width: 70%;
+    width: 90%;
     height: 100px;
     background: black;
     float: left;
     padding: 10px;
-    padding-left: 10px;
+    padding-left: 150px;
     box-sizing: border-box;
-    
+   
 }
  nav{
-    width: 30%;
+    width: 10%;
     height: 100px;
     background: black;
     float:left;
@@ -125,7 +126,7 @@ text-align: center;
 position: relative;
 width: 300px;
 height: 400px;
-background: #0c002b;
+background: #DA0000;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -149,7 +150,7 @@ overflow: hidden;
         position: relative;
         width: 300px;
         height: 400px;
-        background: #0c002b;
+        background: #6200AF;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -197,7 +198,7 @@ position: absolute;
 right: 30px;
 font-size: 4em;
 font-weight: 800;
-color: #1779ff;
+color: black;
 z-index: 1;
 opacity: 0.1;
 transition: 0.5s;
@@ -219,7 +220,7 @@ transition: 0.5s;
         right: 30px;
         font-size: 4em;
         font-weight: 800;
-        color: #1779ff;
+        color: black;
         z-index: 1;
         opacity: 0.1;
         transition: 0.5s;
@@ -286,7 +287,7 @@ transition: 0.5s;
                 right: 30px;
                 font-size: 4em;
                 font-weight: 800;
-                color: #1779ff;
+                color: black;
                 z-index: 1;
                 opacity: 0.1;
                 transition: 0.5s;
@@ -451,7 +452,7 @@ transition: 0.5s;
 .container1 .card .content2 p{
     position: relative;
     font-size: 1em;
-    color: #fff;
+    color: black;
     z-index: 2;
     opacity: 0.5;
     font-weight: 300;
@@ -478,7 +479,7 @@ transition: 0.5s;
 .container1 .card .content3 p{
     position: relative;
     font-size: 1em;
-    color: #fff;
+    color: black;
     z-index: 2;
     opacity: 0.5;
     font-weight: 300;
