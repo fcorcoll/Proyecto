@@ -21,6 +21,11 @@ header{
     min-height: 100px;
     
 }
+hr {
+    height: 2px;
+    background-color: white;
+   
+  }
 .ancho{
     width: 70%;
     height: 100px;
@@ -33,7 +38,7 @@ header{
     background: black;
     float: left;
     padding: 10px;
-    padding-left: 150px;
+    padding-left: 180px;
     box-sizing: border-box;
    
 }
@@ -43,7 +48,7 @@ header{
     background: black;
     float:left;
     text-align: right;
-    padding-top: 35px;
+    padding-top: 45px;
     box-sizing: border-box;
     padding-right: 10px;
 }
@@ -66,6 +71,7 @@ footer{
     background-color: black;
     
 }
+
 
 .container1, .container2, .container3
 {
