@@ -25,7 +25,7 @@ let resultado = solicitarPresupuesto();
     if (resultado < 300){
         console.log("Configuración no disponible");
     }
-    else if (resultado <= 500 && resultado > 300){
+    else if (resultado <= 500 && resultado >= 300){
         const configuracion1 = new Configuracion("Tipo Tier5","Procesador Intel Core i5-10400/i3, 8gbRam DDr4,Gráfica HDintel Integrada");
         console.log(configuracion1.tipo);
         console.log(configuracion1.equipacion);
