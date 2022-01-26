@@ -12,11 +12,104 @@
 body 
 {background-color: black;}
 
+.general{
+   margin: auto;
+   margin-top: 50px;
+   width: 1500px;
+   height: 800px;
+   background-color: red;
 
+
+}
+.derecha{
+   
+  float:right;
+   width:300px;
+   height: 800px;
+   background-color: green;
+   padding-left: 100px;
+
+}
+.Resultadopc{
+   background-color: green;
+   width: 300px;
+   height: 500px;
+  
+
+}
+.izquierda{
+   
+   float:left;
+   width: 400px;
+   height: 800px;
+   background-color: black;
+   padding-left: 60px;
+   padding-top: 100px;
+
+}
+.input{
+   border: solid 2px rgb(187, 0, 0);
+  background-color: transparent;
+  border-radius: 5px;
+  height: 40px;
+  width: 90%;
+  color: #fff;
+
+}
+button {
+   display: block;
+   margin-top: 20px;
+   cursor: pointer;
+   background-color: rgb(187, 0, 0);
+   border: none;
+   color: #fff;
+   height: 30px;
+   width: 50%;
+   font-size: 14px;
+   border-radius: 5px;
+ }
+
+.centro{
+   width: 800px;
+   height: 800px;
+   float:left;
+  background-color: yellow;
+  padding-top: 100px;
+  padding-left: 200px;
+}
+.foto{
+   
+}
+
+
+header{
+   background: black;
+   width: 100%;
+   min-height: 100px;
+   
+}
+.ancho{
+   width: 70%;
+   height: 100px;
+   margin:auto;
+   background: black;
+}
+.logo{
+   width: 90%;
+   height: 100px;
+   background: black;
+   float: left;
+   padding: 10px;
+   padding-left: 180px;
+   box-sizing: border-box;
+  
+}
 
  footer{
+    margin:auto;
+    margin-top: 10px;
     text-align: center;
-    position: fixed;
+   
     color: white;
     bottom: 0;
     left: 45%;
