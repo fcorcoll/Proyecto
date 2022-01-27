@@ -109,7 +109,6 @@ const softwares = [{id :"windows10", valor: 50},
         else{
             alert("Programa no disponible o no deseas ningún sofware");
         }
-    
 
     }
     else{
