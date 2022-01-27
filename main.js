@@ -2,10 +2,8 @@
 //FRANCESC CORCOLL 
 //CODIGO DE LA PÁGINA GAMING PARA CONFIGURAR EL PC
 //************************************************************************************************************************************* */
-
 precio = 0;
 precioProgramas = 0;
-
 //no me entraba dentro del evento, he tenido que buscar por internet y con este onload me accede al evento al ejecutarlo
 
 //window.onload=function(){
@@ -60,10 +58,8 @@ botonClick.addEventListener("click",()=>{
         console.log(configuracion5.tipo);
        //console.log(configuracion5.equipacion);
        resultado.textContent=mostrarDatosPc(configuracion5.tipo,configuracion5.procesador,configuracion5.grafica,configuracion5.ram,configuracion5.memoria);
-       
-       
+        
     }
-
     else{
         console.warn("no se trata de un dato válido, ingrese otro valor.")
         resultado.textContent  = `El dato no es valido`
@@ -79,6 +75,17 @@ const softwares = [{id :"windows10", valor: 50},
                    {id :"driversPack", valor: 25}]; 
 
 
+
+   const SelectPrograma = document.querySelector(".Soft");
+
+   SelectPrograma.addEventListener('change',(evt)=>{
+       let auxiliar;
+       const resultado = document.querySelector('.TipoPrograma');
+       auxiliar = evt.target.value;
+       //resultado.textContent = `Deseas el programa ${evt.target.value}`;
+       resultado.textContent = buscarPrograma(auxiliar);
+   });
+             
     //let programas = prompt("Desea obtener algún tipo de software con la configuración?:");
 
     if(programas == "si" || programas == "SI"){
@@ -115,11 +122,14 @@ const softwares = [{id :"windows10", valor: 50},
         alert ("Entonces el precio de tu producto no se verá alterado.");
     }
    
+
     //Buscaremos dentro del array de objetos el producto por su id para ponerlo dentro de la config del pc.
     function buscarPrograma(respuesta){
+        let euros;
         const softwareFiltro = softwares.find((producto) => producto.id == respuesta);
         console.log(softwareFiltro);
-        alert("Se te sumara un precio de" + " "+ softwareFiltro.valor + "$" + " "+ "al total");
+         euros = "Se te sumara un precio de" + " "+ softwareFiltro.valor + "$" + " "+ "al total";
+         return euros;
     }
 
     //Mostraremos la configuracion del pc con su hardware propio, definidos en el objeto.

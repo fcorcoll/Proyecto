@@ -18,18 +18,33 @@ body
    width: 1500px;
    height: 800px;
    background-color: red;
-
-
 }
+
 .derecha{
    
   float:right;
    width:300px;
    height: 800px;
-   background-color: green;
-   padding-left: 100px;
-
+   background-color: black;
+   padding-left: 30px;
+   padding-top: 80px;
 }
+
+.div-card {
+   border-radius: 30px;
+   color: #fff;
+ 
+   padding-bottom: 30px;}
+
+   .option {
+      border: solid 2px blueviolet;
+      border-radius: 5px;
+      height: 30px;
+      width: 90%;
+      color: black;
+    }
+
+
 .Resultadopc{
    background-color: black;
    width: 300px;
@@ -83,10 +98,6 @@ button {
   padding-top: 100px;
   padding-left: 200px;
 }
-.foto{
-   
-}
-
 
 header{
    background: black;
