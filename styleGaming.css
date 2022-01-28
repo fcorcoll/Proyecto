@@ -19,6 +19,11 @@ body
    height: 800px;
    background-color: red;
 }
+hr {
+   height: 2px;
+   background-color: white;
+  
+ }
 
 .derecha{
    
@@ -35,6 +40,13 @@ body
    color: #fff;
  
    padding-bottom: 30px;}
+
+   .PrecioConSoftware{
+      border-radius: 30px;
+   color: #fff;
+ 
+   padding-bottom: 30px;
+   }
 
    .option {
       border: solid 2px blueviolet;
@@ -117,7 +129,7 @@ header{
    background: black;
    float: left;
    padding: 10px;
-   padding-left: 180px;
+   padding-left: 300px;
    box-sizing: border-box;
   
 }

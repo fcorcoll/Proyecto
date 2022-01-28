@@ -2,17 +2,20 @@
 //FRANCESC CORCOLL 
 //CODIGO DE LA PÁGINA GAMING PARA CONFIGURAR EL PC
 //************************************************************************************************************************************* */
-precio = 0;
+
 precioProgramas = 0;
 //no me entraba dentro del evento, he tenido que buscar por internet y con este onload me accede al evento al ejecutarlo
-
 //window.onload=function(){
 
 const botonClick = document.querySelector("#boton-click");
 const input = document.querySelector("#input-precio");
 const resultado = document.querySelector("#resultado");
 
+
+
 botonClick.addEventListener("click",()=>{
+    precio = input.value;
+    console.log(precio);
 
     
     if (input.value < 300){
@@ -65,9 +68,27 @@ botonClick.addEventListener("click",()=>{
         resultado.textContent  = `El dato no es valido`
 
     }
+    localStorage.setItem('ValorInput', input.value);
+  
 });
 
-//}
+const PrecioTotal = document.querySelector(".PrecioConSoftware");
+const botonPresupuesto = document.querySelector("#botonPresupuesto");
+
+botonPresupuesto.addEventListener("click",()=>{
+    let StoragePc = localStorage.getItem('ValorInput');
+    let StorageSoft = localStorage.getItem('ValorPrograma');
+    console.log(StoragePc);
+    console.log(StorageSoft);
+    let NumeroPc = parseInt(StoragePc);
+    let NumeroSoft = parseInt(StorageSoft);
+    let total = NumeroPc + NumeroSoft;
+    console.log(total);
+    PrecioTotal.textContent = "El presupuesto de tu configuración es de" + " " + total + " " + "$";
+  
+
+});
+
 const softwares = [{id :"windows10", valor: 50},
                    {id :"nvidia", valor: 10},
                    {id :"office", valor: 100},
@@ -86,49 +107,13 @@ const softwares = [{id :"windows10", valor: 50},
        resultado.textContent = buscarPrograma(auxiliar);
    });
              
-    //let programas = prompt("Desea obtener algún tipo de software con la configuración?:");
-
-    if(programas == "si" || programas == "SI"){
-
-        for (const producto of softwares){
-            alert("software disponible" + " " +producto.id + " " + " con un precio de " + " "+  producto.valor);
-            console.log(producto.id);
-            console.log(producto.valor);
-        }
-        let respuesta = prompt("Que software quieres incluir en la configuración?");
-
-        if (respuesta != ""){
-       // const softwareFiltro = softwares.find((producto) => producto.id == respuesta);
-        //console.log(softwareFiltro);
-        //alert("Se te sumara un precio de" + " "+ softwareFiltro.valor + "$" + " "+ "al total");
-        buscarPrograma(respuesta);
-
-        let otroPrograma = prompt("Quieres otro software?")
-        if (otroPrograma == "si"){
-            let programaExtra = prompt ("Ingresa el nombre del programa deseado");
-            buscarPrograma(programaExtra);
-        }
-        else {
-            alert("Ya tienes lista tu configuración");
-        }
-
-        }
-        else{
-            alert("Programa no disponible o no deseas ningún sofware");
-        }
-
-    }
-    else{
-        alert ("Entonces el precio de tu producto no se verá alterado.");
-    }
-   
-
     //Buscaremos dentro del array de objetos el producto por su id para ponerlo dentro de la config del pc.
     function buscarPrograma(respuesta){
         let euros;
         const softwareFiltro = softwares.find((producto) => producto.id == respuesta);
         console.log(softwareFiltro);
-         euros = "Se te sumara un precio de" + " "+ softwareFiltro.valor + "$" + " "+ "al total";
+         euros = "El precio del software es:" + " "+ softwareFiltro.valor + "$" ;
+         localStorage.setItem('ValorPrograma', softwareFiltro.valor);
          return euros;
     }
 
@@ -139,6 +124,13 @@ const softwares = [{id :"windows10", valor: 50},
         return pc;
         
         }
+        function almacenarPrecio(programa){
+            let auxiliar = 0;
+            programa = auxiliar;
+            return auxiliar;
+        }
+     
+        
    
    
 
