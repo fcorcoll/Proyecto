@@ -30,7 +30,7 @@ botonClick.addEventListener("click",()=>{
         resultado.textContent = `Lo sentimos pero no es posible jugar con una tostadora`
     }
     else if (input.value <= 500 && input.value >= 300){
-        const configuracion1 = new ConfiguracionGaming("Tipo Tier5","Procesador Intel Core i5-10400/i3", "Memória 8gbRam DDr4", "Gráfica HDintel Integrada ","Disco Sólido 1TB HDD");
+        const configuracion1 = new ConfiguracionGaming("Tipo Tier5","Procesador Intel core i3", "Memória 8gbRam DDr4", "Gráfica HDintel Integrada ","Disco Sólido 1TB HDD");
         console.log(configuracion1.tipo);
         
         resultado.textContent=mostrarDatosPc(configuracion1.tipo,configuracion1.procesador,configuracion1.grafica,configuracion1.ram,configuracion1.memoria);
@@ -53,7 +53,7 @@ botonClick.addEventListener("click",()=>{
     }
     else if (input.value <= 1200 && input.value > 1000){
      
-        const configuracion4 = new ConfiguracionGaming("Tier 2","Procesador AMD Ryzen5/ o Intel core i7"," Gráfica 2060ti/2060Super", "Memória 16gbRam3600Mhz","Disco duro1TbHDD + 1tbSSD ");
+        const configuracion4 = new ConfiguracionGaming("Tier 2","Procesador AMD Ryzen5/ o Intel core i9"," Gráfica Gtx 1650/Gtx2050ti/1650Super", "Memória 16gbRam3600Mhz","Disco duro2TbHDD + 1tbSSD ");
         console.log(configuracion4.tipo);
       
         resultado.textContent=mostrarDatosPc(configuracion4.tipo,configuracion4.procesador,configuracion4.grafica,configuracion4.ram,configuracion4.memoria);
@@ -61,7 +61,7 @@ botonClick.addEventListener("click",()=>{
         }
     else if (input.value > 1200){
         
-        const configuracion5 = new ConfiguracionGaming("Tipo Premium","Procesador AMD Ryzen7/o, Intel core i7/i9 + Refrigeración Líquida","Gráfica 3080,2080ti", "Memória 16/32gbRam custom","2TbHDD + 1tbSSD");
+        const configuracion5 = new ConfiguracionGaming("Tipo Premium","Procesador AMD Ryzen7/o, Intel core i7/i9","Gráfica Gtx 1650/Gtx2050ti/1650Super", "Memória 16/32gbRam custom","2TbHDD + 1tbSSD");
         console.log(configuracion5.tipo);
        resultado.textContent=mostrarDatosPc(configuracion5.tipo,configuracion5.procesador,configuracion5.grafica,configuracion5.ram,configuracion5.memoria);
         
@@ -143,17 +143,3 @@ const softwares = [{id :"windows10", valor: 50},
         }
      
         
-   
-   
-
-
-   
-    
-
-
-    
-
-
-
-
-

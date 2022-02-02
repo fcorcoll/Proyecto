@@ -145,15 +145,3 @@ const softwares = [{id :"windows10", valor: 50},
         
    
    
-
-
-   
-    
-
-
-    
-
-
-
-
-

@@ -13,8 +13,4 @@ class ConfiguracionGaming {
         return `${this.tipo} ${this.procesador} ${this.procesador} ${this.grafica} ${this.ram} ${this.memoria}`;
     }
    
-
-
-    
-
 }

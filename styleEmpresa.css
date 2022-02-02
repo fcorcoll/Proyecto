@@ -83,7 +83,7 @@ hr {
 }
 
 .input{
-   border: solid 2px rgb(187, 0, 0);
+   border: solid 2px #0705ad;
   background-color: transparent;
   border-radius: 5px;
   height: 40px;
@@ -95,7 +95,7 @@ button {
    display: block;
    margin-top: 20px;
    cursor: pointer;
-   background-color: rgb(187, 0, 0);
+   background-color: #0705ad;
    border: none;
    color: #fff;
    height: 30px;
@@ -108,7 +108,7 @@ button {
    display: block;
    margin-top: 20px;
    cursor: pointer;
-   background-color: rgb(187, 0, 0);
+   background-color: #0705ad;
    border: none;
    color: #fff;
    height: 30px;

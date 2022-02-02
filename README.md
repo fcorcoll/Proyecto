@@ -2,4 +2,4 @@
 
 
 
-Francesc Corcoll Ricart, primera entrega del proyecto Final
+Proyecto simulación página configurador de ordenadores.
