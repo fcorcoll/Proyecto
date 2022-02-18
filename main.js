@@ -13,6 +13,8 @@ const resultado = document.querySelector("#resultado");
 
 const botonMonitor = document.querySelector("#butonMonitor");
 
+
+
 botonMonitor.addEventListener("click",()=>{
  localStorage.setItem('ValorMonitor', 100);
 });
@@ -146,6 +148,7 @@ const softwares = [{id :"windows10", valor: 50},
             programa = auxiliar;
             return auxiliar;
         }
+        
      
         
    

@@ -1,6 +1,6 @@
 
 //FRANCESC CORCOLL 
-//CODIGO DE LA PÁGINA GAMING PARA CONFIGURAR EL PC
+//CODIGO DE LA PÁGINA ARTE PARA CONFIGURAR EL PC
 //************************************************************************************************************************************* */
 
 precioProgramas = 0;
@@ -97,7 +97,7 @@ botonPresupuesto.addEventListener("click",()=>{
     }
   
     PrecioTotal.textContent = "El presupuesto de tu configuración es de" + " " + total + " " + "$";
-    localStorage.clear();
+    //localStorage.clear();
 
 });
 
@@ -126,13 +126,18 @@ const softwares = [{id :"windows10", valor: 50},
         console.log(softwareFiltro);
          euros = "El precio del software es:" + " "+ softwareFiltro.valor + "$" ;
          localStorage.setItem('ValorPrograma', softwareFiltro.valor);
+         localStorage.setItem('NombrePrograma', softwareFiltro.id);
          return euros;
     }
 
     //Mostraremos la configuracion del pc con su hardware propio, definidos en el objeto.
     function mostrarDatosPc(tier,proces,grafico,rams,discoduro){
         let pc;
+        let pcStorage;
+
         pc = "Para este presupuesto te vamos a recomendar un pc de tipo"+ " " + tier +" "+ "y va a contener los siguientes componentes:" +  "\n" +" " + proces + " " + "\n" + " "  + grafico + " " + "\n" + " "  + rams + " " + "\n" + " "  + discoduro;
+        pcStorage = "La config es de tier " + " " +tier +" "+ "y va a contener los siguientes componentes:" +  "\n" +" " + proces + " " + "\n" + " "  + grafico + " " + "\n" + " "  + rams + " " + "\n" + " "  + discoduro;
+        localStorage.setItem('Config', pcStorage);
         return pc;
         
         }

@@ -7,6 +7,7 @@ $(document).ready(()=>{
     console.log("se cargó la pagina");
 }); 
 
+
 let StoragePc = localStorage.getItem('ValorInput');
 let StorageConfig = localStorage.getItem('Config');
 let StoragePrograma = localStorage.getItem('NombrePrograma');
@@ -23,6 +24,8 @@ const BotonPc = document.getElementById("botonPc");
 const BotonPeri = document.getElementById("botonPerifericos");
 const BotonSoft = document.getElementById("botonSoftwares");
 const Preciofinal = document.getElementById("TotalPrecio");
+const BotonFinal = document.getElementById("botonFinal");
+const URLGET = "notas.json";
 
 let total = 0;
 input.textContent = StorageConfig + " " + " con un precio de"+ " " + StoragePc + "$";
@@ -63,4 +66,28 @@ $("#botonSoftwares").on('click',()=>{
 
 });
 Preciofinal.textContent = "El valor de tu presupuesto es :" + " " + total;
+
+
+$("#botonFinal").on('click',()=>{
+    
+    $.get(URLGET,function(respuesta,estado){
+        if(estado === "succes"){
+            console.log(respuesta);
+        }
+    });
+    
+    fetch(URLGET)
+        .then((Response) => Response.json())
+        //.then((json) => console.log(json));
+        .then((json) =>{
+            $("div:last").append(`<p> ${json.name} </p>
+            <p>${json.location}</p>`);
+        
+            console.log(json);
+            });
+
+
+});
+
+
 localStorage.clear();
