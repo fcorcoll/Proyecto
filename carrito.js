@@ -49,8 +49,10 @@ $("#botonPc").on('click',()=>{
 });
 $("#botonPerifericos").on('click',()=>{
     //let StoragePrecioPc = localStorage.getItem('valorInput');
-   
-    total = total + NumeroSoft;
+   if (NumeroMoni = null){
+       NumeroMoni = 0;
+   }
+    total = total + NumeroMoni;
     console.log(total);
     Preciofinal.textContent = "El presupuesto asciende a :" +" " + total;
     //console.log(StoragePrecioPc);
@@ -59,7 +61,7 @@ $("#botonPerifericos").on('click',()=>{
 $("#botonSoftwares").on('click',()=>{
     //let StoragePrecioPc = localStorage.getItem('valorInput');
    
-    total = total + NumeroMoni;
+    total = total + NumeroSoft;
     console.log(total);
     Preciofinal.textContent = "El presupuesto asciende a :" +" " + total;
     //console.log(StoragePrecioPc);
